@@ -4,7 +4,7 @@ import * as mongoose from 'mongoose';
 
 export const databaseProviders: Provider[] = [
   {
-    provide: 'DATABASE_CONNECTION', // This token will be used for dependency injection
+    provide: 'mongodb+srv://sagnikbasak2002:ysLRe6ElPkABsRKW@cluster0.saute8g.mongodb.net/?retryWrites=true&w=majority', // This token will be used for dependency injection
     useFactory: async (): Promise<typeof mongoose> => {
       try {
         const uri = 'mongodb+srv://sagnikbasak2002:ysLRe6ElPkABsRKW@cluster0.saute8g.mongodb.net/?retryWrites=true&w=majority';

@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   const fetchApiKey = () => {
-    // Replace with your Nest.js API endpoint to fetch the API key
+    
     axios.get('/admin/api-key')
       .then((response) => {
         setApiKey(response.data);
@@ -38,7 +38,7 @@ function App() {
   };
 
   const updateApiKey = () => {
-    // Replace with your Nest.js API endpoint to update the API key
+   
     const newApiKey = prompt('Enter the new API key:');
     if (newApiKey) {
       axios.post('/admin/api-key', { key: newApiKey })
